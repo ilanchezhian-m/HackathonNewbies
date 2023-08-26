@@ -4,13 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Challenge 1</title>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <h3>Challenge 1</h3>
   </header>
+  <div id="clue-container">
+    <p id="clue-text">Begin your journey by looking deeper. <!-- You might want to change the website color --></p>
+    <p id="hint1" class="hint1"></p>
+  </div>
+  <div>
+    <button id="hint-button" onclick="
+      hint1()
+    ">Hint</button>
+  </div>
+  <div class="next-button-1-div">
+    <form action="page2.html" method="get">
+      <input type="submit" value="Next" class="next-button">
+    </form>
+  </div>
+
+  <script>
+    function hint1() {
+      document.getElementById("hint1").innerHTML = "Some inspection is required";
+    }
+  </script>
 </body>
 
 </html>
