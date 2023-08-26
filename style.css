@@ -1,8 +1,4 @@
 
-body{
-  background-color: skyblue;
-}
-
 .hint1{
   color: red;
 }
@@ -27,7 +23,7 @@ body{
 .heading{
     text-align: center;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 244, 244));
-    -webkit-background-clip: text; /* Apply gradient to text */
+    background-clip: text;  /* Apply gradient to text */
     color: transparent;
     font-size: 70px;
 }
