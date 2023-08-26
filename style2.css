@@ -1,14 +1,15 @@
 /* Apply general styling to the page */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-image: radial-gradient(ellipse, rgb(112, 216, 240), rgba(225, 225, 232, 0.792));
   margin: 0;
   padding: 0;
+  font-size:35px;
 }
 
 header {
-  background-color: #333;
-  color: white;
+  background-color: #e5dbdb;
+  color: rgb(56, 16, 16);
   text-align: center;
   padding: 10px;
 }
@@ -16,11 +17,14 @@ header {
 /* Style the clue and hint sections */
 #clue-container {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
+  color: yellow;
+  font-weight: bolder;
+
 }
 
 .hint {
-  color: #666;
+  color: #141715;
   font-style: italic;
 }
 
@@ -28,14 +32,18 @@ header {
 #color-sequence {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
+
+
 }
 
 .color-block {
-  width: 50px;
-  height: 50px;
-  margin: 0 10px;
-  border: 2px solid black;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0px 10px;
+  border: 1px solid black;
+  border-radius: 50px;
 }
 
 /* Style the input and check button */
@@ -55,7 +63,7 @@ input[type="text"] {
 /* Style the result message */
 #result-message {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: bold;
 }
 
@@ -66,9 +74,56 @@ input[type="text"] {
 }
 
 .next-button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
+  padding: 15px 45px;
+  background-color: #fbfeff;
+  color: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
+  font-size: 25px;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+.next-button:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+#hint-button {
+  padding: 15px 50px;
+  font-size: 25px;
+  border-radius: 15px;
+  background-color: rgb(254, 0, 0);
+  color: rgb(255, 242, 242);
+  margin-left: 40px;
+  font-weight: bolder;
+}
+#hint-button:hover{
+  background-color: rgb(250, 250, 250);
+  color: rgb(255, 0, 0);
+}
+#answer-input {
+  padding: 15px 25px;
+  border: 1px solid #ccc;
+  width: 250px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+  font-weight: bolder;
+
+}
+
+/* Check button */
+#check-button {
+  padding: 15px 25px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+#check-button:hover{
+  background-color: #f6f6f6;
+  color: #3498db;
 }
