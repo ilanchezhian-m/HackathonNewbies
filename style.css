@@ -1,6 +1,16 @@
-
+h1{
+    background-image: linear-gradient(to right, rgb(161, 255, 110), #edfd59);
+    color: white;
+    text-shadow: 2px 4px 7px  black;
+    font-size: 70px;
+    border-radius: 30px;
+    padding-left: 25px;
+    text-align: center;
+}
 .hint1{
   color: red;
+  font-size: 50px;
+  font-weight: bolder;
 }
 
 .next-button-1-div{
@@ -12,10 +22,14 @@
   background-color: transparent;
   color: skyblue;
   border: none;
+  font-size: 40px;
 }
+body{
+    background-color: skyblue;
+  }
 
 /* index page css */
-body{
+.page1{
     height: 100vh;
     background-color: red; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, rgb(249, 137, 137), rgb(139, 236, 236));
@@ -23,7 +37,7 @@ body{
 .heading{
     text-align: center;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 244, 244));
-    background-clip: text;  /* Apply gradient to text */
+    background-clip: text ;  /* Apply gradient to text */
     color: transparent;
     font-size: 70px;
 }
@@ -41,8 +55,8 @@ form {
     align-items: center;
 }
 
-input[type="text"] {
-    width: 500px; /* Adjust the width as needed */
+ input[type="text"] {
+    width: 500px; 
     padding: 10px;
     font-size: 20px;
     margin-bottom: 10px;
@@ -50,15 +64,32 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-    width: 300px; /* Adjust the width as needed */
+    width: 300px; 
     padding: 10px 15px;
     font-size: 20px;
     border-radius: 15px;
-    background-color: aquamarine;
-    color: rgb(11, 11, 11);
+    background-color:skyblue;
     font-weight: bolder;
+} 
+.statement{
+    font-size: 50px;
+    background-image: linear-gradient(to left, rgb(0, 0, 255), rgb(255, 0, 0));  
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 15px;
 }
 
+#hint-button {
+    padding: 15px 50px;
+    background-color: #21e378;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bolder;
+    border-radius: 30px     ;
+  }
 
 
 
