@@ -1,129 +1,46 @@
-/* Apply general styling to the page */
 body {
-  font-family: Arial, sans-serif;
-  background-image: radial-gradient(ellipse, rgb(112, 216, 240), rgba(225, 225, 232, 0.792));
   margin: 0;
-  padding: 0;
-  font-size:35px;
-}
-
-header {
-  background-color: #e5dbdb;
-  color: rgb(56, 16, 16);
-  text-align: center;
-  padding: 10px;
-}
-
-/* Style the clue and hint sections */
-#clue-container {
-  text-align: center;
-  margin-top: 15px;
-  color: yellow;
-  font-weight: bolder;
-
-}
-
-.hint {
-  color: #141715;
-  font-style: italic;
-}
-
-/* Style the color blocks */
-#color-sequence {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-
-
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
 }
 
-.color-block {
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: 0px 10px;
-  border: 1px solid black;
-  border-radius: 50px;
-}
-
-/* Style the input and check button */
-input[type="text"] {
-  padding: 5px;
-  margin-right: 10px;
-}
-
-#check-button {
-  padding: 5px 10px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-/* Style the result message */
-#result-message {
+#word-container {
   text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-/* Style the next button */
-.next-button-2-div {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.next-button {
-  padding: 15px 45px;
-  background-color: #fbfeff;
-  color: rgb(0, 0, 0);
-  border: none;
-  cursor: pointer;
-  font-size: 25px;
-  border-radius: 15px;
-  font-weight: bolder;
-}
-.next-button:hover {
-  background-color: black;
-  color: whitesmoke;
-}
-
-#hint-button {
-  padding: 15px 50px;
-  font-size: 25px;
-  border-radius: 15px;
-  background-color: rgb(254, 0, 0);
-  color: rgb(255, 242, 242);
-  margin-left: 40px;
-  font-weight: bolder;
-}
-#hint-button:hover{
-  background-color: rgb(250, 250, 250);
-  color: rgb(255, 0, 0);
-}
-#answer-input {
-  padding: 15px 25px;
+  padding: 20px;
   border: 1px solid #ccc;
-  width: 250px;
-  border-radius: 10px;
-  margin-right: 10px;
-  margin-left: 20px;
-  font-weight: bolder;
-
+  border-radius: 5px;
+  background-color: white;
 }
 
-/* Check button */
-#check-button {
-  padding: 15px 25px;
+#jumbled-word {
+  font-size: 1.2rem;
+}
+
+#guess-input {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#check-button,
+#reset-button {
+  margin-top: 10px;
+  padding: 5px 10px;
   background-color: #3498db;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
-  margin-left: 20px;
-  font-weight: bolder;
 }
-#check-button:hover{
-  background-color: #f6f6f6;
-  color: #3498db;
+
+#check-button:hover,
+#reset-button:hover {
+  background-color: #2980b9;
+}
+
+#result-message {
+  margin-top: 10px;
+  font-weight: bold;
 }

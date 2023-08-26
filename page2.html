@@ -3,58 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Color Code Decryption Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Jumbles</title>
   <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-  <header>
-    <h3>Color Code Decryption Challenge</h3>
-  </header>
-  <div id="clue-container">
-    <p id="clue-text">Colors can hold secrets. Find the hidden message within the colors.</p>
-    <p id="hint2" class="hint"></p>
+  <div id="word-container">
+    <p id="jumbled-word">Jumble this word: <span id="jumble">EHLOL</span></p>
+    <input type="text" id="guess-input" placeholder="Your guess">
+    <button id="check-button">Check</button>
+    <button id="reset-button">Reset</button>
+    <p id="result-message"></p>
   </div>
-  <div>
-    <button id="hint-button" onclick="hint2()">Hint</button>
-  </div>
-  <div id="color-sequence">
-    <div class="color-block" style="background-color: rgb(114, 202, 59);"></div>
-    <div class="color-block" style="background-color: rgb(255, 0, 0);"></div>
-    <div class="color-block" style="background-color: rgb(0, 0, 255);"></div>
-    <!-- Add more color blocks -->
-  </div>
-  <div>
-    <input type="text" id="answer-input" placeholder="Enter answer">
-    <button id="check-button" onclick="checkAnswer()">Check Answer</button>
-  </div>
-  <div id="result-message"></div>
-  <div class="next-button-2-div">
-    <form action="page3.html" method="get">
-      <input type="submit" value="Next" class="next-button">
-    </form>
-  </div>
-
-  <script>
-    function hint2() {
-      document.getElementById("hint2").innerHTML = "RGB values represent colors.";
-    }
-
-    function checkAnswer() {
-      const answerInput = document.getElementById("answer-input");
-      const resultMessage = document.getElementById("result-message");
-
-      const correctAnswer = "decode"; // Change this to the correct answer
-
-      if (answerInput.value.toLowerCase() === correctAnswer) {
-        resultMessage.textContent = "Correct! You've unlocked the next clue.";
-        resultMessage.style.color = "green";
-      } else {
-        resultMessage.textContent = "Oops! Try again.";
-        resultMessage.style.color = "red";
-      }
-    }
-  </script>
+  <script src="script2.js"></script>
 </body>
 
 </html>
