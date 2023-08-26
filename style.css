@@ -1,0 +1,64 @@
+
+.hint1{
+  color: red;
+}
+
+.next-button-1-div{
+  display: grid;
+  justify-content: center;
+}
+
+.next-button{
+  background-color: transparent;
+  color: skyblue;
+  border: none;
+}
+
+/* index page css */
+body{
+    height: 100vh;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(249, 137, 137), rgb(139, 236, 236));
+}
+.heading{
+    text-align: center;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 244, 244));
+    background-clip: text;  /* Apply gradient to text */
+    color: transparent;
+    font-size: 70px;
+}
+.name{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    color:white;
+}
+
+/* Increase size of input and button */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 500px; /* Adjust the width as needed */
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    color: rgb(11, 11, 11);
+    font-weight: bolder;
+}
+
+
+
+
